@@ -1,0 +1,69 @@
+@keyframes header_anim {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8em;
+  font-weight: 700;
+}
+
+.stroke {
+  text-shadow: black 0 0 2px;
+}
+
+.header {
+  display: flex;
+  min-height: 100vh;
+  padding: 8px 50px;
+  background-color: #00ad2e;
+  background-image: url("bg.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.header__title {
+  transform: translateX(0);
+  animation-name: header_anim;
+  animation-duration: 1.3s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #fff;
+  align-self: center;
+  font-size: 80px;
+}
+
+.cv {
+  display: flex;
+  min-height: 100vh;
+  padding: 100px 50px;
+  background-color: #0079cf;
+  background-image: url("bg_cv.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+nav {
+  height: 65px;
+}
+
+/*#bottommenu {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background: grey;
+  -webkit-transition: bottom 1.5s;
+  transition: bottom 1.5s;
+}*/
