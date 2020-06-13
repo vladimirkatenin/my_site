@@ -50,13 +50,14 @@ h1 {
 
 .cv {
   display: flex;
-  min-height: 150vh;
+ 
   padding: 100px 50px;
   background-color: #0079cf;
+
+
   background-image: url("bg_cv.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 nav {
