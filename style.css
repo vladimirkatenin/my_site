@@ -44,6 +44,10 @@ h1 {
   font-size: 80px;
 }
 
+.small_header {
+  font-size: 25px;
+}
+
 .cv {
   display: flex;
   min-height: 100vh;
