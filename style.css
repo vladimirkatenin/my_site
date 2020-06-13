@@ -41,11 +41,11 @@ h1 {
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   color: #fff;
   align-self: center;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .small_header {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .cv {
