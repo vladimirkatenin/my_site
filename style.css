@@ -25,7 +25,7 @@ h1 {
 
 .header {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   padding: 8px 50px;
   background-color: #00ad2e;
   background-image: url("bg.svg");
@@ -53,10 +53,9 @@ h1 {
   min-height: 100vh;
   padding: 100px 50px;
   background-color: #0079cf;
-
-
-
-  background: url("bg_cv.svg") fixed center no-repeat;
+  background-image: url("bg_cv.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 
