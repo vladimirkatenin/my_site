@@ -50,7 +50,7 @@ h1 {
 
 .cv {
   display: flex;
-
+  min-height: 100vh;
   padding: 100px 50px;
   background-color: #0079cf;
 
