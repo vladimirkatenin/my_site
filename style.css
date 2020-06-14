@@ -7,6 +7,15 @@
   }
 }
 
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  }
+
 @keyframes header_anim {
   from {
     transform: translateX(-120%);
