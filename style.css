@@ -1,29 +1,11 @@
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 20px;
-  }
-  h2 {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  h1 {
-    font-size: 20px;
-  }
-  h2 {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 360px), (min-device-width: 360px) and (max-device-width: 640px) and (orientation : portrait) {
+@media (max-width: 768px) {
   h1 {
     font-size: 40px;
   }
   h2 {
     font-size: 15px;
   }
-  }
+}
 
 @keyframes header_anim {
   from {
