@@ -45,6 +45,16 @@ h2 {
   background-size: cover;
 }
 
+/* competitions.html */
+
+.competitions-text {
+  color: #fff;
+}
+
+th {
+  font-size: small;
+}
+
 footer {
   padding-top: 1rem;
   padding-bottom: 1rem;

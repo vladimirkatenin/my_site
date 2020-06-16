@@ -1,524 +1,446 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Сайт-резюме Владимира Катенина</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    <!-- Bootstrap core CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сайт-резюме Владимира Катенина</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    <!-- JS scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+  <!-- JS scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
+  </style>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet" />
+</head>
 
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet" />
-  </head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
+        aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarsExample08"
-          aria-controls="navbarsExample08"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link sliding-link" href="#home">Главная<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sliding-link" href="#cv">Резюме</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link">Java/Scala/Kt, С++, Py, DL/ML/CV/NLP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Личный кабинет</a>
+            <!-- disabled -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Книжная полка</a>
+            <!-- disabled -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link transition" href="competitions.html">Соревнования</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-        <div
-          class="collapse navbar-collapse justify-content-md-center"
-          id="navbarsExample08"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link sliding-link" href="#home"
-                >Главная<span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link sliding-link" href="#cv">Резюме</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link">Java/Scala/Kt, С++, Py, DL/ML/CV/NLP</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Личный кабинет</a>
-              <!-- disabled -->
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Книжная полка</a>
-              <!-- disabled -->
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Соревнования</a>
-              <!-- disabled -->
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <main role="main">
-      <div class="py-5 landing-bg" style="display: flex;" id="home">
-        <div class="container" style="margin: auto; text-align: center;">
-          <div class="header__title stroke">
-            <h1>Владимир Катенин</h1>
-            <h2 style="padding: 0 0 10px 0;">
-              Интерн IT (Java/Scala/Kt, С++, Py, DL/ML/CV/NLP)<br />
-              Москва, Санкт-Петербург, Хельсинки, Барселона
-            </h2>
-            <a
-              type="button"
-              class="btn btn-primary btn-lg sliding-link"
-              href="#cv"
-              >Посмотреть резюме</a
-            >
-          </div>
+  <main role="main">
+    <div class="py-5 landing-bg" style="display: flex;" id="home">
+      <div class="container" style="margin: auto; text-align: center;">
+        <div class="header__title stroke">
+          <h1>Владимир Катенин</h1>
+          <h2 style="padding: 0 0 10px 0;">
+            Интерн IT (Java/Scala/Kt, C11 (2011), С++, Py, DL/ML/CV/NLP)<br />
+            Москва, Санкт-Петербург, Хельсинки, Барселона
+          </h2>
+          <a type="button" class="btn btn-primary btn-lg sliding-link" href="#cv">Посмотреть резюме</a>
         </div>
       </div>
+    </div>
 
-      <div class="py-5 cv-bg">
-        <div class="container" style="padding: 65px 10px 0 10px;" id="cv">
-          <div class="">
-            <div
-              class="card mb-3"
-              style="
+    <div class="py-5 cv-bg">
+      <div class="container" style="padding: 65px 10px 0 10px;" id="cv">
+        <div class="">
+          <div class="card mb-3" style="
                 max-width: 540px;
                 background-color: transparent;
                 border: none;
-              "
-            >
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="photo.jpg" alt="..." class="img-thumbnail" />
+              ">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="photo.jpg" alt="..." class="img-thumbnail" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title stroke" style="color: white;">
+                    Катенин Владимир Александрович
+                  </h5>
+                  <p class="card-text stroke" style="color: white;">
+                    2003 г.р.
+                  </p>
+                  <p class="card-text stroke" style="color: white;">
+                    Почта: mr.katenin@mail.ru
+                  </p>
+                  <p class="card-text stroke" style="color: white;">
+                    Skype: mr.katenin
+                  </p>
+                  <p class="card-text stroke" style="color: white;">
+                    LinkedIn: /vldmr-katenin
+                  </p>
+                  <p class="card-text stroke" style="color: white;">
+                    GitHub: /vladimirk33
+                  </p>
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title stroke" style="color: white;">
-                      Катенин Владимир Александрович
-                    </h5>
-                    <p class="card-text stroke" style="color: white;">
-                      2003 г.р.
-                    </p>
-                    <p class="card-text stroke" style="color: white;">
-                      Почта: mr.katenin@mail.ru
-                    </p>
-                    <p class="card-text stroke" style="color: white;">
-                      Skype: mr.katenin
-                    </p>
-                    <p class="card-text stroke" style="color: white;">
-                      LinkedIn: /vldmr-katenin
-                    </p>
-                    <p class="card-text stroke" style="color: white;">
-                      GitHub: /vladimirk33
-                    </p>
-                  </div>
+              </div>
+              <div class="alert alert-info" role="alert">
+                Цель: интерн IT (Java/Scala/Kt, C11 (2011), С++, Py, DL/ML/CV/NLP)
+                <br />Москва, Санкт-Петербург, Хельсинки, Барселона
+              </div>
+              <a type="button" class="btn btn-info" href="CV1VKatenin-16062020RUS-в.4.1.pdf"
+                download="CV1VKatenin-16062020RUS-в.4.1.pdf" data-toggle="tooltip" data-placement="bottom"
+                title="PDF-файл">Скачать резюме</a>
+            </div>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Общая информация
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <strong>График работы:</strong> гибкий; полный день; сменный
+                  график; вахтовый метод; удаленная работа <br /><strong><br />Опыт работы (6 месяцев –
+                    2019-2020):</strong>
+                  <br /><strong>1 инженерная</strong> <br /><strong>1.1 SoftDev</strong>
+                  – командная разработка электронного магазина, МИРЭА
+                  <br /><strong>1.2 Cтек</strong> – конструктор сайтов <b>Wix</b>, фреймворк <b>Bootstrap 4.5</b>
+                  <br />– SEO-мастер Wix<br>– вёрстка в Bootstrap 4.5 <br />– PageSpeed Insights <br />–
+                  Статистика Яндекс <br />– Google-формы <br /><br /><strong>2020</strong>
+                  – окончил 10 классов ГБОУ «Школа № 947», город Москва, CGPA:
+                  <strong>5.0</strong>/5.0; <br /><strong>2020</strong> –
+                  <strong>наст. время</strong> – 11й класс (инженерный) ГБОУ
+                  «Школа № 947», город Москва, CGPA: <strong>5.0</strong>/5.0;
                 </div>
-                <div class="alert alert-info" role="alert">
-                  Цель: интерн IT (Java/Scala/Kt, С++, Py, DL/ML/CV/NLP)
-                  <br />Москва, Санкт-Петербург, Хельсинки, Барселона
-                </div>
-                <a
-                  type="button"
-                  class="btn btn-info"
-                  href="CV1VKatenin-12062020RUS-в.4.pdf"
-                  download="CV1VKatenin-12062020RUS-в.4.pdf"
-                  data-toggle="tooltip"
-                  data-placement="bottom"
-                  title="PDF-файл"
-                  >Скачать резюме</a
-                >
               </div>
             </div>
-            <div class="accordion" id="accordionExample">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Общая информация
-                    </button>
-                  </h2>
-                </div>
-
-                <div
-                  id="collapseOne"
-                  class="collapse show"
-                  aria-labelledby="headingOne"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    <strong>График работы:</strong> гибкий; полный день; сменный
-                    график; вахтовый метод; удаленная работа <br /><strong
-                      ><br />Опыт работы (6 месяцев – 2019-2020):</strong
-                    >
-                    <br /><strong>1 инженерная</strong> <br /><strong
-                      >1.1 SoftDev</strong
-                    >
-                    – командная разработка электронного магазина, МИРЭА
-                    <br /><strong>1.2 Cтек</strong> – конструктор сайтов Wix
-                    <br />– SEO-мастер WIX <br />– PageSpeed Insights <br />–
-                    Статистика Яндекс <br />– Google-формы <br /><br /><strong
-                      >2020</strong
-                    >
-                    – окончил 10 классов ГБОУ «Школа № 947», город Москва, CGPA:
-                    <strong>5.0</strong>/5.0; <br /><strong>2020</strong> –
-                    <strong>наст. время</strong> – 11й класс (инженерный) ГБОУ
-                    «Школа № 947», город Москва, CGPA: <strong>5.0</strong>/5.0;
-                  </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Компетенции
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <strong>Оператор ЭВМ II разряда</strong>
+                  <br /><strong>Java, Python, C++, WordPress – начальный</strong>
+                  <br /><strong>уровень Wix – лендинг, SEO</strong>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Компетенции
-                    </button>
-                  </h2>
-                </div>
-                <div
-                  id="collapseTwo"
-                  class="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    <strong>Оператор ЭВМ II разряда</strong>
-                    <br /><strong
-                      >Java, Python, C++, WordPress – начальный</strong
-                    >
-                    <br /><strong>уровень Wix – лендинг, SEO</strong>
-                  </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    I ИНОСТРАННЫЕ ЯЗЫКИ
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  – английский (понимаю, могу объясняться, МГИМО 2019 – 2020)
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      I ИНОСТРАННЫЕ ЯЗЫКИ
-                    </button>
-                  </h2>
-                </div>
-                <div
-                  id="collapseThree"
-                  class="collapse"
-                  aria-labelledby="headingThree"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    – английский (понимаю, могу объясняться, МГИМО 2019 – 2020)
-                  </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    II ДОПОЛНИТЕЛЬНО
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                  <strong>2020</strong> – одногодичный курс по
+                  совершенствованию английского языка в МГИМО <br /><strong>2020</strong>
+                  – командная разработка электронного магазина на базе МИРЭА
+                  <br /><strong>2018</strong>
+                  – курсы оператора ЭВМ на базе школы, срок обучения 9 мес.,
+                  квалификация – оператор ЭВМ II разряда Имею навыки
+                  пользования видео- и аудиотехникой, аккуратен, ответственен,
+                  исполнителен
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header" id="headingFour">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                    >
-                      II ДОПОЛНИТЕЛЬНО
-                    </button>
-                  </h2>
-                </div>
-                <div
-                  id="collapseFour"
-                  class="collapse"
-                  aria-labelledby="headingFour"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    <strong>2020</strong> – одногодичный курс по
-                    совершенствованию английского языка в МГИМО <br /><strong
-                      >2020</strong
-                    >
-                    – командная разработка электронного магазина на базе МИРЭА
-                    <br /><strong>2018</strong>
-                    – курсы оператора ЭВМ на базе школы, срок обучения 9 мес.,
-                    квалификация – оператор ЭВМ II разряда Имею навыки
-                    пользования видео- и аудиотехникой, аккуратен, ответственен,
-                    исполнителен
-                  </div>
-                </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    III MEETUPS
+                  </button>
+                </h2>
               </div>
-              <div class="card">
-                <div class="card-header" id="headingFive">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
-                    >
-                      III MEETUPS
-                    </button>
-                  </h2>
-                </div>
-                <div
-                  id="collapseFive"
-                  class="collapse"
-                  aria-labelledby="headingFive"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    <table class="table table-striped">
-                      <tbody>
-                        <!-- 
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                  <table class="table table-striped">
+                    <tbody>
+                      <!-- 
                         <tr>
                           <th scope="row"></th>
                           <td></td>
                           <td></td>
                         </tr>
                         -->
-                        <tr>
-                          <th scope="row">17</th>
-                          <td>
-                            Курс «Основы программирования на С++», МИЭМ ВШЭ
-                          </td>
-                          <td><strong>Moscow</strong> May 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">16</th>
-                          <td>
-                            Курс «Программирование устройств на Arduino и
-                            прикладная робототехника», МИЭМ ВШЭ
-                          </td>
-                          <td><strong>Moscow</strong> May 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">15</th>
-                          <td>
-                            Курс «Git. Базовый курс», GeekBrains, № 0819331,
-                            <strong>06.05.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> May 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">14</th>
-                          <td>
-                            Курс «Введение в Git», GeekBrains, № 0817070,
-                            <strong>05.05.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> May 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">13</th>
-                          <td>
-                            Курс «Основы Git», Stepik, № 337918,
-                            <strong>04.05.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> May 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">12</th>
-                          <td>
-                            Курс «Программирование на Python», № 334205,
-                            <strong>29.04.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> Apr. 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">11</th>
-                          <td>
-                            Курс «Безопасность в интернете», Stepik, №331048,
-                            <strong>27.04.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> Apr. 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">10</th>
-                          <td>
-                            Курс «Веб-разработка для начинающих: HTML и CSS»,
-                            Stepik, № 330111, <strong>26.04.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> Apr. 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">9</th>
-                          <td>
-                            Курс «Python для начинающих», Stepik, №320483,
-                            <strong>16.04.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> Apr. 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">8</th>
-                          <td>
-                            Курс «Введение в Data Science и машинное обучение»,
-                            Stepik, № 305769, <strong>31.03.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> Mar. 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">7</th>
-                          <td>
-                            Интенсив «Swif tдля начинающих», GeekBrains, №
-                            0743802,
-                            <strong>22.03.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> Mar. 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">6</th>
-                          <td>
-                            Интенсив «Веб-разработка для начинающих»,
-                            GeekBrains, № 0725823, <strong>24.02.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> Feb. 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">5</th>
-                          <td>
-                            Интенсив «Основы веб-дизайна», GeekBrains, №
-                            0725820,
-                            <strong>24.02.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> Feb. 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">4</th>
-                          <td>
-                            Интенсив «Python для начинающих», GeekBrains, №
-                            0724103,
-                            <strong>21.02.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> Feb. 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>
-                            Интенсив «Java для начинающих», GeekBrains, №
-                            0721963,
-                            <strong>17.02.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> Feb. 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>
-                            Курс «Основы программирования», GeekBrains, №
-                            0721055,
-                            <strong>16.02.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> Feb. 2020</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>
-                            Интенсив «Основы программирования», GeekBrains, №
-                            0721330,
-                            <strong>16.02.2020</strong>
-                          </td>
-                          <td><strong>Moscow</strong> Feb. 2020</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                      <tr>
+                        <th scope="row">17</th>
+                        <td>
+                          Курс «Основы программирования на С++», МИЭМ ВШЭ
+                        </td>
+                        <td><strong>Moscow</strong> May 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">16</th>
+                        <td>
+                          Курс «Программирование устройств на Arduino и
+                          прикладная робототехника», МИЭМ ВШЭ
+                        </td>
+                        <td><strong>Moscow</strong> May 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">15</th>
+                        <td>
+                          Курс «Git. Базовый курс», GeekBrains, № 0819331,
+                          <strong>06.05.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> May 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">14</th>
+                        <td>
+                          Курс «Введение в Git», GeekBrains, № 0817070,
+                          <strong>05.05.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> May 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">13</th>
+                        <td>
+                          Курс «Основы Git», Stepik, № 337918,
+                          <strong>04.05.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> May 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">12</th>
+                        <td>
+                          Курс «Программирование на Python», № 334205,
+                          <strong>29.04.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> Apr. 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">11</th>
+                        <td>
+                          Курс «Безопасность в интернете», Stepik, №331048,
+                          <strong>27.04.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> Apr. 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td>
+                          Курс «Веб-разработка для начинающих: HTML и CSS»,
+                          Stepik, № 330111, <strong>26.04.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> Apr. 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9</th>
+                        <td>
+                          Курс «Python для начинающих», Stepik, №320483,
+                          <strong>16.04.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> Apr. 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>
+                          Курс «Введение в Data Science и машинное обучение»,
+                          Stepik, № 305769, <strong>31.03.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> Mar. 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>
+                          Интенсив «Swif tдля начинающих», GeekBrains, №
+                          0743802,
+                          <strong>22.03.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> Mar. 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>
+                          Интенсив «Веб-разработка для начинающих»,
+                          GeekBrains, № 0725823, <strong>24.02.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> Feb. 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>
+                          Интенсив «Основы веб-дизайна», GeekBrains, №
+                          0725820,
+                          <strong>24.02.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> Feb. 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>
+                          Интенсив «Python для начинающих», GeekBrains, №
+                          0724103,
+                          <strong>21.02.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> Feb. 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>
+                          Интенсив «Java для начинающих», GeekBrains, №
+                          0721963,
+                          <strong>17.02.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> Feb. 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>
+                          Курс «Основы программирования», GeekBrains, №
+                          0721055,
+                          <strong>16.02.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> Feb. 2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>
+                          Интенсив «Основы программирования», GeekBrains, №
+                          0721330,
+                          <strong>16.02.2020</strong>
+                        </td>
+                        <td><strong>Moscow</strong> Feb. 2020</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header" id="headingSix">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseSix"
-                      aria-expanded="false"
-                      aria-controls="collapseSix"
-                    >
-                      IV ИНТЕРЕСЫ
-                    </button>
-                  </h2>
-                </div>
-                <div
-                  id="collapseSix"
-                  class="collapse"
-                  aria-labelledby="headingSix"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    Wargaming (W40K), программирование. Предпочитаемые предметы:
-                    математика, информатика, физика.
-                    <br />Семейное положение – холост
-                  </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSix">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    IV ИНТЕРЕСЫ
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                <div class="card-body">
+                  Wargaming (W40k), программирование. Предпочитаемые предметы:
+                  математика, информатика, физика.
+                  <br />Семейное положение – холост
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer class="text-muted bg-dark" style="text-align: center;">
-      <div class="container">
-        <p>
-          v0.3.1 от 14.06.2020
-        </p>
-      </div>
-    </footer>
+  <footer class="text-muted bg-dark" style="text-align: center;">
+    <div class="container">
+      <p>
+        v0.4 от 16.06.2020
+        <br>Сделано на Bootstrap
+      </p>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    $(".sliding-link").click(function (e) {
+      e.preventDefault();
+      var aid = $(this).attr("href");
+      $("html,body").animate({ scrollTop: $(aid).offset().top }, "slow");
+    });
+  </script>
+  <script type="text/javascript">
+    var myHash = location.hash; //получаем значение хеша
+    location.hash = ""; //очищаем хеш
+    if (myHash[1] != undefined) {
+      //проверяем, есть ли в хеше какое-то значение
+      $("html, body").animate({ scrollTop: $(myHash).offset().top }, 1000); //скроллим за секунду
+    }
+  </script>
+  <!-- под вопросом 
     <script type="text/javascript">
-      $(".sliding-link").click(function (e) {
-        e.preventDefault();
-        var aid = $(this).attr("href");
-        $("html,body").animate({ scrollTop: $(aid).offset().top }, "slow");
+      $(document).ready(function () {
+        $("body").css("display", "none");
+
+        $("body").fadeIn(2000);
+
+        $("a.transition").click(function (event) {
+          event.preventDefault();
+          linkLocation = this.href;
+          $("body").fadeOut(1000, redirectPage);
+        });
+
+        function redirectPage() {
+          window.location = linkLocation;
+        }
       });
-    </script>
-  </body>
+    </script> -->
+</body>
+
 </html>

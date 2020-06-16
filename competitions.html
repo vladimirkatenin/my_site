@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сайт-резюме Владимира Катенина</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
+  <!-- JS scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
+        aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link transition" href="index.html">Главная<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link transition" href="index.html#cv">Резюме</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link">Java/Scala/Kt, С++, Py, DL/ML/CV/NLP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Личный кабинет</a>
+            <!-- disabled -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Книжная полка</a>
+            <!-- disabled -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sliding-link" href="#competitions">Соревнования</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <div class="py-5 cv-bg" id="competitions" style="min-height: 100vh;">
+      <div class="container">
+        <div class="">
+          <div>
+            <h1 style="
+                  font-size: 40px;
+                  text-align: center;
+                  padding: 30px 0 0 20px;
+                  margin: 0 0 50px 0;
+                ">
+              Соревнования
+            </h1>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                  href="#list-profile" role="tab" aria-controls="profile">Профиль</a>
+                <a class="list-group-item list-group-item-action" id="list-jb-list" data-toggle="list" href="#list-jb"
+                  role="tab" aria-controls="jb">JetBrains ML School 2020
+                  <span class="badge badge-success">PASSED</span></a>
+                <a class="list-group-item list-group-item-action active" id="list-csc-list" data-toggle="list"
+                  href="#list-csc" role="tab" aria-controls="csc">Computer Science Center 2020</a>
+                <a class="list-group-item list-group-item-action" id="list-vtb-list" data-toggle="list" href="#list-vtb"
+                  role="tab" aria-controls="vtb">ВТБ-Интерн 2021</a>
+              </div>
+              <br />
+            </div>
+            <div class="col-12 col-md-12 col-lg-8">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade competitions-text stroke" id="list-profile" role="tabpanel"
+                  aria-labelledby="list-profile-list">
+                  <p>Общая статистика:</p>
+                </div>
+                <div class="tab-pane fade competitions-text stroke" id="list-jb" role="tabpanel"
+                  aria-labelledby="list-jb-list">
+                  Результат: <span class="badge badge-success">PASSED</span>
+                </div>
+                <div class="tab-pane fade show active competitions-text stroke" id="list-csc" role="tabpanel"
+                  aria-labelledby="list-csc-list">
+                  1 этап
+                  <br />
+                  Результат: <span class="badge badge-success">PASSED</span>
+                  <br /><br />
+                  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Задачи 1-го этапа
+                  </a>
+                  <div class="collapse" id="collapseExample" style="padding: 10px 0 0 0;">
+                    <div class="collapse" id="collapseTbl1Ex1">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Задача 1. Задача на доске<br>Сколько решений имеет система уравнений? <br> <img
+                          src="tbl1task1.png" alt="Сис-ма уравнений" style="width: 50%;"> <br>В поле ответа укажите
+                        целое число.
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex1Sol">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Решение задачи №1.
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex2">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Задача 2. Последовательность чисел<div><span>
+                            <p>Дан ряд чисел: 101, 104, 109, 116,... , который
+                              задаётся формулой a<sub>n</sub> = 100 + n<sup>2</sup>,
+                              где n = 1, 2, 3, ... . Для каждого d<sub>n</sub> –
+                              наибольший общий делитель a<sub>n</sub> и a<sub>n+1</sub>. Найдите значение n, при котором
+                              достигается максимальное значение
+                              d<sub>n</sub>. <br><br> В поле ответа укажите целое число.
+                            </p>
+                          </span></div>
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex3">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Задача 3. Система уравнений <div><span>
+                            <p>Найдите значения параметра a, при которых система не имеет решений и при которых имеет
+                              бесконечно много решений:<br> <br>
+                            <div><img src="tbl1task3.png" style="width: 30%;">
+                            </div> <br> В поле ответа укажите все найденные значения параметра в порядке возрастания,
+                            разделяя одним пробелом. Если значение является
+                            нецелым числом, округлите его до <span style="font-weight:bold;">трёх</span> знаков после
+                            запятой согласно правилам округления.
+                            </p>
+                          </span></div>
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex3Sol">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Решение задачи №3.
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex4">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Задача 4. Карточки с цифрами<br>У Игоря есть магнитные карточки, на которых написаны цифры. Так
+                        получилось, что некоторые из карточек потерялись, остались только карточки с цифрами 0; 1; 2; 3;
+                        3; 4; 5. Найдите количество различных шестизначных чисел, делящихся на 15, которые можно
+                        составить из оставшихся карточек. <br><br>
+                        В поле ответа укажите целое число.
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex4Sol">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Решение задачи №4.
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex5">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Задача 5. Предел последовательности <div>Вписанная в треугольник A1B1C1 окружность касается его
+                          сторон B1C1, C1A1 и A1B1 в точках A2, B2, C2 соответственно, вписанная в треугольник A2B2C2
+                          окружность касается его сторон B2C2, C2A2 и A2B2 в точках A3, B3, C3 соответственно и т.д.
+                          Найдите предел последовательности величин углов BnAnCn при n → ∞.</div><br>В поле ответа
+                        укажите действительное число - ответ в радианах. При необходимости округлите до трёх знаков
+                        после запятой. При решении считайте π = 3,14.
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex6">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Задача 6. Шоколадная фабрика <div><span>
+                            <p>Шоколадная фабрика устраивает розыгрыш золотых билетов, каждый из которых позволит одному
+                              ребёнку побывать на фабрике. Петя
+                              купил 5 шоколадок и открывает их одну за другой до тех пор, пока не найдёт золотой билет.
+                              Вероятность обнаружения билета при
+                              открытии каждой шоколадки равна 0,07. Найдите матожидание числа шоколадок, оставшихся
+                              закрытыми.<br> <br> В поле ответа укажите действительное число. При необходимости
+                              округлите до <span style="font-weight:bold;">трёх</span> знаков после запятой согласно
+                              правилам округления.
+                            </p>
+                          </span></div>
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex6Sol">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Решение задачи №6.
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex7">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Задача 7. Города и дороги <br> В стране 20 городов. Правительство выделило деньги на
+                        строительство 187 дорог. Каждая дорога соединяет два разных города и не проходит через другие
+                        города. Между любыми двумя городами не может быть больше одной дороги. Сколько существует
+                        способов проложить дороги?<br><br>В поле ответа укажите целое число.
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex7Sol">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Решение задачи №7.
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex8">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Задача 8. Ранг матрицы <div><span>
+                            <p>Дана квадратная матрица <span>A</span> с характеристическим многочленом вида<br>
+                            <div><img src="tbl1task8.png"></div> Найдите ранг матрицы A.<br><br> В поле ответа укажите
+                            целое число.
+                            </p>
+                          </span></div>
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex8Sol">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Решение задачи №8.
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex9">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Задача 9. Мили, фунты, дюймы
+                        <img src="tbl1task9.1.png" alt="" style="width: 80%;">
+                        <img src="tbl1task9.2.png" alt="" style="width: 80%;">
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTbl1Ex10">
+                      <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                        Задача 10. Система охлаждения
+                        <img src="tbl1task10.png" alt="" style="width: 65%;">
+                      </div>
+                    </div>
+                    <div class="card card-body" style="
+                          background-color: transparent;
+                          border-color: transparent;
+                        ">
+
+                      <table class="table table-striped stroke" style="color: #fff;">
+                        <caption style="color: #fff;">
+                          Итог: 6/ ? баллов.
+                        </caption>
+                        <thead>
+                          <tr class="d-flex">
+                            <th class="col-1">№</th>
+                            <th class="col-3">Статус</th>
+                            <th class="col-3">Задание</th>
+                            <th class="col-5">Решение</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex">
+                            <th class="col-1">1</th>
+                            <td class="col-3">
+                              <span class="badge badge-success">РЕШЕНО</span>
+                            </td>
+                            <td class="col-3">
+                              <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#collapseTbl1Ex1"
+                                role="button" aria-expanded="false" aria-controls="collapseTbl1Ex1">
+                                Условие
+                              </a>
+                            </td>
+                            <td class="col-5"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                                href="#collapseTbl1Ex1Sol" role="button" aria-expanded="false"
+                                aria-controls="collapseTbl1Ex1Sol">
+                                Решение
+                              </a></td>
+
+                          </tr>
+                          <tr class="d-flex">
+                    </div>
+                    <th class="col-1">2</th>
+                    <td class="col-3">
+                      <span class="badge badge-danger">НЕ РЕШЕНО</span>
+                    </td>
+                    <td class="col-3">
+                      <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#collapseTbl1Ex2" role="button"
+                        aria-expanded="false" aria-controls="collapseTbl1Ex2">
+                        Условие
+                      </a>
+                    </td>
+                    <td class="col-5"></td>
+                    </tr>
+                    <tr class="d-flex">
+                      <th class="col-1">3</th>
+                      <td class="col-3">
+                        <span class="badge badge-success">РЕШЕНО</span>
+                      </td>
+                      <td class="col-3"> <a class="btn btn-primary btn-sm" data-toggle="collapse"
+                          href="#collapseTbl1Ex3" role="button" aria-expanded="false" aria-controls="collapseTbl1Ex3">
+                          Условие
+                        </a></td>
+                      <td class="col-5"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                          href="#collapseTbl1Ex3Sol" role="button" aria-expanded="false"
+                          aria-controls="collapseTbl1Ex3Sol">
+                          Решение
+                        </a></td>
+                    </tr>
+                    <tr class="d-flex">
+                      <th class="col-1">4</th>
+                      <td class="col-3">
+                        <span class="badge badge-info">ЧАСТИЧНОЕ<br />РЕШЕНИЕ</span>
+                      </td>
+                      <td class="col-3"> <a class="btn btn-primary btn-sm" data-toggle="collapse"
+                          href="#collapseTbl1Ex4" role="button" aria-expanded="false" aria-controls="collapseTbl1Ex4">
+                          Условие
+                        </a></td>
+                      <td class="col-5"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                          href="#collapseTbl1Ex4Sol" role="button" aria-expanded="false"
+                          aria-controls="collapseTbl1Ex4Sol">
+                          Решение
+                        </a></td>
+                    </tr>
+                    <tr class="d-flex">
+                      <th class="col-1">5</th>
+                      <td class="col-3">
+                        <span class="badge badge-danger">НЕ РЕШЕНО</span>
+                      </td>
+                      <td class="col-3"> <a class="btn btn-primary btn-sm" data-toggle="collapse"
+                          href="#collapseTbl1Ex5" role="button" aria-expanded="false" aria-controls="collapseTbl1Ex5">
+                          Условие
+                        </a></td>
+                      <td class="col-5"></td>
+                    </tr>
+                    <tr class="d-flex">
+                      <th class="col-1">6</th>
+                      <td class="col-3">
+                        <span class="badge badge-success">РЕШЕНО</span>
+                      </td>
+                      <td class="col-3"> <a class="btn btn-primary btn-sm" data-toggle="collapse"
+                          href="#collapseTbl1Ex6" role="button" aria-expanded="false" aria-controls="collapseTbl1Ex6">
+                          Условие
+                        </a></td>
+                      <td class="col-5"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                          href="#collapseTbl1Ex6Sol" role="button" aria-expanded="false"
+                          aria-controls="collapseTbl1Ex6Sol">
+                          Решение
+                        </a></td>
+                    </tr>
+                    <tr class="d-flex">
+                      <th class="col-1">7</th>
+                      <td class="col-3">
+                        <span class="badge badge-success">РЕШЕНО</span>
+                      </td>
+                      <td class="col-3"> <a class="btn btn-primary btn-sm" data-toggle="collapse"
+                          href="#collapseTbl1Ex7" role="button" aria-expanded="false" aria-controls="collapseTbl1Ex7">
+                          Условие
+                        </a></td>
+                      <td class="col-5"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                          href="#collapseTbl1Ex7Sol" role="button" aria-expanded="false"
+                          aria-controls="collapseTbl1Ex7Sol">
+                          Решение
+                        </a></td>
+                    </tr>
+                    <tr class="d-flex">
+                      <th class="col-1">8</th>
+                      <td class="col-3">
+                        <span class="badge badge-success">РЕШЕНО</span>
+                      </td>
+                      <td class="col-3"> <a class="btn btn-primary btn-sm" data-toggle="collapse"
+                          href="#collapseTbl1Ex8" role="button" aria-expanded="false" aria-controls="collapseTbl1Ex8">
+                          Условие
+                        </a></td>
+                      <td class="col-5"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                          href="#collapseTbl1Ex8Sol" role="button" aria-expanded="false"
+                          aria-controls="collapseTbl1Ex8Sol">
+                          Решение
+                        </a></td>
+                    </tr>
+                    <tr class="d-flex">
+                      <th class="col-1">9</th>
+                      <td class="col-3">
+                        <span class="badge badge-danger">НЕ РЕШЕНО</span>
+                      </td>
+                      <td class="col-3">
+                        <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#collapseTbl1Ex9" role="button"
+                          aria-expanded="false" aria-controls="collapseTbl1Ex9">
+                          Условие
+                        </a></td>
+                      <td class="col-5"></td>
+                    </tr>
+                    <tr class="d-flex">
+                      <th class="col-1">10</th>
+                      <td class="col-3">
+                        <span class="badge badge-danger">НЕ РЕШЕНО</span>
+                      </td>
+                      <td class="col-3">
+                        <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#collapseTbl1Ex10" role="button"
+                          aria-expanded="false" aria-controls="collapseTbl1Ex10">
+                          Условие
+                        </a></td>
+                      <td class="col-5"></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                  </div>
+                </div>
+                <br />
+                <br />
+                2 этап
+                <br />
+                Результат:
+                <span class="badge badge-info">Участвовал</span><br /><br />
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button"
+                  aria-expanded="false" aria-controls="collapseExample2">
+                  Задачи 2-го этапа
+                </a>
+                <div class="collapse" id="collapseExample2" style="padding: 10px 0 0 0;">
+                  <div class="collapse" id="collapseTbl2Ex1">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Задача 1. Разминка<p>Решите систему:
+                      <div><img src="tbl2task1.png"></div>
+                      </p></span>
+                      <p>В поле ответа укажите решение системы в формате «A mod B» без кавычек, найдите положительные
+                        значения А и В. Если система
+                        имеет несколько решений, то перечислите их в указанном формате через запятую без дополнительных
+                        пробелов.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseTbl2Ex2">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Задача 2. Оценки сложности<br><img src="tbl2task2.png" style="width: 90%;">
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseTbl2Ex3">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Задача 3. Дифференцирование <div>В точке (x;y) = (0;1) найдите частные производные функции u(x;y),
+                        заданной неявно уравнением<br><br>
+                        <p>u<sup>3</sup> + 3xyu +
+                          1 = 0<br><br>В поле ответа укажите действительное число – сумму du/dx и du/dy. При
+                          необходимости
+                          округлите до трёх знаков после запятой согласно правилам округления.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseTbl2Ex3Sol">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Решение задачи №3.
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseTbl2Ex4">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Задача 4. Префиксный код <div> Решили закодировать последовательность, состоящую из букв А, Б, В,
+                        Г, Д, Е, неравномерным двоичным кодом, позволяющим однозначно
+                        декодировать полученную двоичную последовательность. Для двух букв использовали кодовые слова 00
+                        и 10. <br>
+                        <br>Найдите наименьшую суммарную длину всех кодовых слов. <br>
+                        <br>В поле ответа укажите целое число.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseTbl2Ex5">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Задача 5. Аренда машин<div><span>
+                          <p>Сотрудники и сотрудницы консалтинговой фирмы арендуют автомобили у трёх прокатных компаний:
+                            60% от компании 1, 30% от компании
+                            2 и 10% от компании 3. Прошлая статистика показывает, что 9% автомобилей компании 1, 20%
+                            автомобилей компании 2 и 6% автомобилей
+                            компании 3 нуждаются в ремонте. Если арендованный автомобиль, доставленный в фирму,
+                            нуждается в ремонте, какова вероятность
+                            того, что он арендован в компании 2? <br><br>В поле ответа укажите действительное число. При
+                            необходимости округлите до <span style="font-weight:bold;">двух</span> знаков после запятой.
+                          </p>
+                        </span></div>
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseTbl2Ex6">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Задача 6. Системы координат <img src="tbl2task6.png" style="width: 90%;">
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseTbl2Ex7">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Задача 7. Лаборатория<p>В криминалистической лаборатории есть 9 образцов неизвестной жидкости.
+                        Известно, что один из образцов ядовитый, а остальные
+                        – безвредные. У вас осталось только две лабораторные мыши. Вы можете напоить каждую из мышей
+                        коктейлем из разных образцов,
+                        но на это есть только одна попытка в день – мышей можно напоить ровно в полдень (обе мыши пьют
+                        одновременно, вы не можете
+                        учитывать результат для одной мыши при выборе напитка для другой). Любое количество отравленной
+                        жидкости убивает. Как обнаружить,
+                        какой из образцов отравлен за два дня?<br><br>Приведите максимально подробное решение задачи.
+                        Оформить его можно в форме ниже или прикрепить файл.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseTbl2Ex7Sol">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Решение задачи №7.
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseTbl2Ex8">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Задача 8. Последовательность <img src="tbl2task8.png" style="width: 90%;">
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseTbl2Ex8Sol">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Решение задачи №8.
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseTbl2Ex9">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Задача 9. Друзья<p>Среди 126 студентов каждый имеет ровно трёх друзей (понятие «быть другом»
+                        симметрично). Студенты строго упорядочены по рейтингу
+                        (студентов с равным рейтингом нет). Будем говорить, что студент учится лучше своих друзей, если
+                        он по рейтингу выше хотя бы
+                        двух из своих друзей. Какое максимальное значение может принимать число студентов, которые
+                        учатся лучше своих друзей? <br><br>В поле ответа укажите целое число.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseTbl2Ex10">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Задача 10. Алгоритм<p>Дана последовательность a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub> ∈
+                        N. Придумайте алгоритм, который для каждого a<sub>i</sub> находит самый правый из таких
+                        элементов, которые строго левее и не больше его. Не обязательно писать псевдокод, можно
+                        рассказать алгоритм словами. Программа не должна использовать хеш-таблицы и должна работать за
+                        время O(n).<br><br>Приведите максимально подробное решение задачи. Оформить его можно в форме
+                        ниже или прикрепить файл.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseTbl2Ex11">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Задача 11. Предел<img src="tbl2task11.png" style="width: 90%;">
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseTbl2Ex12">
+                    <div class="card card-body" style="background-color: transparent; border-color: transparent;">
+                      Задача 12. Детективный метод<img src="tbl2task12.png" width="90%">
+                    </div>
+                  </div>
+                  <div class="card card-body" style="
+                          background-color: transparent;
+                          border-color: transparent;
+                        ">
+                    <table class="table table-striped stroke" style="color: #fff;">
+                      <caption style="color: #fff;">
+                        Итог: 6/46 баллов.
+                      </caption>
+                      <thead>
+                        <tr class="d-flex">
+                          <th class="col-1">№</th>
+                          <th class="col-3">Статус</th>
+                          <th class="col-3">Задание</th>
+                          <th class="col-5">Решение</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="d-flex">
+                          <th class="col-1">1</th>
+                          <td class="col-3">
+                            <span class="badge badge-danger">НЕ РЕШЕНО</span>
+                          </td>
+                          <td class="col-3"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex1" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex1">
+                              Условие
+                            </a></td>
+                          <td class="col-5"></td>
+                        </tr>
+                        <tr class="d-flex">
+                          <th class="col-1">2</th>
+                          <td class="col-3">
+                            <span class="badge badge-danger">НЕ РЕШЕНО</span>
+                          </td>
+                          <td class="col-3"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex2" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex2">
+                              Условие
+                            </a></td>
+                          <td class="col-5"></td>
+                        </tr>
+                        <tr class="d-flex">
+                          <th class="col-1">3</th>
+                          <td class="col-3">
+                            <span class="badge badge-success">РЕШЕНО</span>
+                          </td>
+                          <td class="col-3"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex3" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex3">
+                              Условие
+                            </a></td>
+                          <td class="col-5"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex3Sol" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex3Sol">
+                              Решение
+                            </a></td>
+                        </tr>
+                        <tr class="d-flex">
+                          <th class="col-1">4</th>
+                          <td class="col-3">
+                            <span class="badge badge-danger">НЕ РЕШЕНО</span>
+                          </td>
+                          <td class="col-3"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex4" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex4">
+                              Условие
+                            </a></td>
+                          <td class="col-5"></td>
+                        </tr>
+                        <tr class="d-flex">
+                          <th class="col-1">5</th>
+                          <td class="col-3">
+                            <span class="badge badge-danger">НЕ РЕШЕНО</span>
+                          </td>
+                          <td class="col-3"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex5" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex5">
+                              Условие
+                            </a></td>
+                          <td class="col-5"></td>
+                        </tr>
+                        <tr class="d-flex">
+                          <th class="col-1">6</th>
+                          <td class="col-3">
+                            <span class="badge badge-danger">НЕ РЕШЕНО</span>
+                          </td>
+                          <td class="col-3"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex6" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex6">
+                              Условие
+                            </a></td>
+                          <td class="col-5"></td>
+                        </tr>
+                        <tr class="d-flex">
+                          <th class="col-1">7</th>
+                          <td class="col-3">
+                            <span class="badge badge-success">РЕШЕНО</span>
+                          </td>
+                          <td class="col-3"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex7" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex7">
+                              Условие
+                            </a></td>
+                          <td class="col-5"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex7Sol" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex7Sol">
+                              Решение
+                            </a></td>
+                        </tr>
+                        <tr class="d-flex">
+                          <th class="col-1">8</th>
+                          <td class="col-3">
+                            <span class="badge badge-success">РЕШЕНО</span>
+                          </td>
+                          <td class="col-3"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex8" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex8">
+                              Условие
+                            </a></td>
+                          <td class="col-5"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex8Sol" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex8Sol">
+                              Решение
+                            </a></td>
+                        </tr>
+                        <tr class="d-flex">
+                          <th class="col-1">9</th>
+                          <td class="col-3">
+                            <span class="badge badge-danger">НЕ РЕШЕНО</span>
+                          </td>
+                          <td class="col-3"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex9" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex9">
+                              Условие
+                            </a></td>
+                          <td class="col-5"></td>
+                        </tr>
+                        <tr class="d-flex">
+                          <th class="col-1">10</th>
+                          <td class="col-3">
+                            <span class="badge badge-danger">НЕ РЕШЕНО</span>
+                          </td>
+                          <td class="col-3"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex10" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex10">
+                              Условие
+                            </a></td>
+                          <td class="col-5"></td>
+                        </tr>
+                        <tr class="d-flex">
+                          <th class="col-1">11</th>
+                          <td class="col-3">
+                            <span class="badge badge-danger">НЕ РЕШЕНО</span>
+                          </td>
+                          <td class="col-3"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex11" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex11">
+                              Условие
+                            </a></td>
+                          <td class="col-5"></td>
+                        </tr>
+                        <tr class="d-flex">
+                          <th class="col-1">12</th>
+                          <td class="col-3">
+                            <span class="badge badge-danger">НЕ РЕШЕНО</span>
+                          </td>
+                          <td class="col-3"><a class="btn btn-primary btn-sm" data-toggle="collapse"
+                              href="#collapseTbl2Ex12" role="button" aria-expanded="false"
+                              aria-controls="collapseTbl2Ex12">
+                              Условие
+                            </a></td>
+                          <td class="col-5"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <br><br>Результат:
+              </div>
+              <div class="tab-pane fade competitions-text stroke" id="list-vtb" role="tabpanel"
+                aria-labelledby="list-vtb-list">
+                Подано заявление.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <footer class="text-muted bg-dark" style="text-align: center;">
+    <div class="container">
+      <p>
+        v0.4 от 16.06.2020
+      </p>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    $(".sliding-link").click(function (e) {
+      e.preventDefault();
+      var aid = $(this).attr("href");
+      $("html,body").animate({ scrollTop: $(aid).offset().top }, "slow");
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('a[href^="#"]').click(function (e) {
+        e.preventDefault();
+        var el = $(this);
+        $("body").animate(
+          {
+            scrollTop: el.offset().top,
+          },
+          1000
+        );
+      });
+    });
+  </script>
+  <!-- под вопросом
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("body").css("display", "none");
+
+        $("body").fadeIn(2000);
+
+        $("a.transition").click(function (event) {
+          event.preventDefault();
+          linkLocation = this.href;
+          $("body").fadeOut(1000, redirectPage);
+        });
+
+        function redirectPage() {
+          window.location = linkLocation;
+        }
+      });
+    </script> -->
+</body>
+
+</html>
