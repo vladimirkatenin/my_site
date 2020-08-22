@@ -109,7 +109,7 @@
     <footer class="text-muted bg-dark" style="text-align: center;">
         <div class="container">
             <p>
-                v0.4.1 от 22.08.2020
+                v0.4.2 от 22.08.2020
                 <br>Сделано на Bootstrap
             </p>
         </div>
