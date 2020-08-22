@@ -31,7 +31,7 @@ h2 {
 .landing-bg {
   min-height: 100vh;
   background-color: green;
-  background-image: url("bg.svg");
+  background-image: url("../images/bg.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -39,7 +39,7 @@ h2 {
 
 .cv-bg {
   background-color: #0079cf;
-  background-image: url("bg_cv.svg");
+  background-image: url("../images/bg_cv.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
